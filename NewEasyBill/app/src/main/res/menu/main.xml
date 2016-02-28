@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_main_day" android:title="日"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_main_month" android:title="月"
+        android:orderInCategory="101" app:showAsAction="never" />
+
+    <item android:id="@+id/action_main_year" android:title="年"
+        android:orderInCategory="102" app:showAsAction="never" />
+</menu>

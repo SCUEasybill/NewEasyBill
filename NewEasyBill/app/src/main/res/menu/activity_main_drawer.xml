@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_bill" android:icon="@android:drawable/ic_menu_agenda"
+            android:title="账单" />
+        <item android:id="@+id/nav_category" android:icon="@android:drawable/ic_dialog_dialer"
+            android:title="分类" />
+        <item android:id="@+id/nav_setting" android:icon="@android:drawable/ic_menu_manage"
+            android:title="设置" />
+        <item android:id="@+id/nav_dream" android:icon="@android:drawable/ic_menu_edit"
+            android:title="梦想清单" />
+    </group>
+
+    <item android:title="鼓励我们">
+        <menu>
+            <item android:id="@+id/nav_share" android:icon="@android:drawable/ic_menu_share"
+                android:title="分享" />
+            <item android:id="@+id/nav_send" android:icon="@android:drawable/ic_menu_send"
+                android:title="发送" />
+        </menu>
+    </item>
+
+</menu>
