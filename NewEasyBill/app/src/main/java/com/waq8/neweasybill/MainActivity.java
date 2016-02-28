@@ -1,5 +1,6 @@
 package com.waq8.neweasybill;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -21,6 +22,7 @@ import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
+import com.waq8.login.Login;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -69,6 +71,16 @@ public class MainActivity extends AppCompatActivity
         //navigation
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        //nav-header-main
+        ImageView imageView_header = (ImageView)findViewById(R.id.imageView);
+        imageView_header.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Login.class);
+                startActivity(intent);
+            }
+        });
 
         //piechart
         mChart = (PieChart) findViewById(R.id.spread_pie_chart);

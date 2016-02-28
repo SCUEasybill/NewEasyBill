@@ -1,5 +1,7 @@
 package com.waq8.util;
 
+import android.util.Log;
+
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -10,12 +12,13 @@ import java.net.Socket;
  */
 public class MyConnector {
     Socket socket = null;
-    DataInputStream din = null;
-    DataOutputStream dout = null;
+    public DataInputStream din = null;
+   public DataOutputStream dout = null;
 
    public MyConnector(String address, int port){
        try {
            socket = new Socket(address,port);
+           Log.d("socket","connect success");
            din = new DataInputStream(socket.getInputStream());//输入流
            dout = new DataOutputStream(socket.getOutputStream());//输出流
        } catch (IOException e) {

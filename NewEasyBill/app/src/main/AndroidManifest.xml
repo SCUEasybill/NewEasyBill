@@ -23,11 +23,11 @@
             android:label="@string/title_activity_bill"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
-        <activity android:name=".register"
-            android:label="注册">
+        <activity android:name="com.waq8.login.Login"
+            android:label="@string/login">
         </activity>
-        <activity android:name=".Login"
-            android:label="登陆">
+        <activity android:name="com.waq8.login.Register"
+            android:label="@string/register">
         </activity>
         <activity
             android:name=".CateActivity"
@@ -41,5 +41,6 @@
             android:label="@string/title_activity_add_bill">
         </activity>
     </application>
-
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
 </manifest>
