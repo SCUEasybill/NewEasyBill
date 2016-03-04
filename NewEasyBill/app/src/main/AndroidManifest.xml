@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.waq8.neweasybill" >
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -23,11 +26,13 @@
             android:label="@string/title_activity_bill"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
-        <activity android:name="com.waq8.login.Login"
-            android:label="@string/login">
+        <activity
+            android:name="com.waq8.login.Login"
+            android:label="@string/login" >
         </activity>
-        <activity android:name="com.waq8.login.Register"
-            android:label="@string/register">
+        <activity
+            android:name="com.waq8.login.Register"
+            android:label="@string/register" >
         </activity>
         <activity
             android:name=".CateActivity"
@@ -37,10 +42,14 @@
             android:name=".SettActivity"
             android:label="@string/title_activity_sett" >
         </activity>
-        <activity android:name=".AddBillActivity"
-            android:label="@string/title_activity_add_bill">
+        <activity
+            android:name=".AddBillActivity"
+            android:label="@string/title_activity_add_bill" >
+        </activity>
+        <activity
+            android:name="com.waq8.graph.GraphMain"
+            android:label="@string/graph_main" >
         </activity>
     </application>
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+
 </manifest>

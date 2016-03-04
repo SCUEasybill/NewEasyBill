@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.waq8.graph.GraphMain">
+
+    <item android:id="@+id/menu_graph_i" android:title="@string/menu_graph_i"></item>
+    <item android:id="@+id/menu_graph_o" android:title="@string/menu_graph_o"></item>
+    <item android:id="@+id/menu_graph_b" android:title="@string/menu_graph_b"></item>
+
+</menu>

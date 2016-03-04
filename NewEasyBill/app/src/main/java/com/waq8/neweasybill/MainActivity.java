@@ -22,6 +22,7 @@ import com.github.mikephil.charting.components.Legend;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
+import com.waq8.graph.GraphMain;
 import com.waq8.login.Login;
 
 import java.util.ArrayList;
@@ -187,7 +188,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_setting) {
             SettActivity.activityStart(this);
         } else if (id == R.id.nav_dream) {
-
+            GraphMain.activityStart(this);
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
